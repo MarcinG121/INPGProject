@@ -1,0 +1,17 @@
+Algorytm Dijkstry s?u?y do znajdowania najkrotszej ?cie?ki w grafie. Jest przyk?adem alogrytmu zach?annego.
+Algorytm dzia?a tylko dla grafow w ktorych wagi kraw?dzi maj? warto?ci dodatnie.
+------------------
+Dzia?anie algorytmu:
+s - wierzcho?ek ?rod?owy
+w(i, j) - waga kraw?dzi mi?dzy wierzcho?kami i, j.
+
+1. Tworzymy tablic? d z odlego?ciami od ?rod?a dla ka?dego wierzcho?ka.
+   Na pocz?tku d[s] = 0, d[i] = inf dla ka?dego innego wierzcho?ka.
+2. Tworzymy kolejk? priorytetow? wierzcho?kow w grafie. Priortytetem jest aktualnie wyliczowna odleg?o?? od wierzcho?ka s.
+3. Dopoki kolejka nie jest pusta:
+   - usu? z kolejki wierzcho?ek o najni?szym priorytecie (oznaczmy go jako u).
+   - dla ka?dego s?siada v wierzcho?ka u:
+       -je?eli d[u] + w(u, v) < d[v] to d[v] := d[u] + w(u, v)
+4. Tablica d zawiera teraz najkrotsze odleg?o?ci do ka?dego wierzcho?ka.
+(5.) Je?li chcemy zna? najkrotsz? ?cie?k? musimy dodatkowo stworzy? tablic? p ktora zawiera poprzednika ka?dego wierzcho?ka.
+
