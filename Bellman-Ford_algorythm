@@ -1,0 +1,54 @@
+1. Algorytm Bellmana-Forda służy do znajdowania najktrótszej drogi z wierzchołka s w grafie skierowanym bez cykli o ujemnej
+długości. 
+
+
+
+2. Złożoność obliczeniowa:
+   Złoźoność pamięciowa:
+
+
+
+
+
+3. Przykładowy pseudokod:
+
+ function BellmanFord(list vertices, list edges, vertex source)
+   ::distance[],predecessor[]
+   
+   // Step 1: initialize graph
+   for each vertex v in vertices:
+       distance[v] := inf             
+       predecessor[v] := null         
+   
+   distance[source] := 0              
+   
+   // Step 2: relax edges repeatedly
+   for i from 1 to size(vertices)-1:
+       for each edge (u, v) with weight w in edges:
+           if distance[u] + w < distance[v]:
+               distance[v] := distance[u] + w
+               predecessor[v] := u
+   
+   // Step 3: check for negative-weight cycles
+   for each edge (u, v) with weight w in edges:
+       if distance[u] + w < distance[v]:
+           error "Graph contains a negative-weight cycle"
+   
+   return distance[], predecessor[]
+   
+   4. Bibliografia i więcej informacji:
+   - Thomas Cormen "Wprowadzie do algorytmów"
+   - https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm
+   - https://pl.wikipedia.org/wiki/Algorytm_Bellmana-Forda
+   - http://math.uni.lodz.pl/~horzel/ZA_2008/9_znajdowanie_drogi.pdf
+   - http://algorytmika.wikidot.com/bellman-ford
+   - http://www.algorytm.org/algorytmy-grafowe/algorytm-forda-bellmana.html
+   - http://eduinf.waw.pl/inf/alg/001_search/0138a.php
+   - http://informatyka.wikidot.com/algorytm-bellmana-forda
+   
+   
+   
+   
+   
+   
+   
