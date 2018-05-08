@@ -1,0 +1,90 @@
+A* jest to algorytm heurystyczny (tzn. nie ma gwarancji że znajdziemy optymalne rozwiązanie a czesto nawet poprawne :/ ) wyszukiwania najkrótszej ścieżkiw w grafie (W uproszczeniu graf to zbiór wierzchołków, które mogą być połączone krawędziami w taki sposób, że każda krawędź kończy się i zaczyna w którymś z wierzchołków) ważonym z dowolnego wierzchołka do wierzchołka spełniającego określony warunek zwany testem celu. 
+
+DZIAŁANIE ALGORYTMU
+Na początku algoryt wybiera od wierzchołka początkowego inny wierzchołek nazwijmy go x z dostepnych w danym kroku niezbadanych wierzchołków w taki sposób by funkcja :
+
+f(x) = g(x) + h(x) 
+
+Osiągała minimum
+
+g(x) --> droga pomiędzy wierzchołkiem początkowym a x
+h(x) --> przewidywana przez heurystykę droga od x do wierzchołka docelowego
+
+PRZEWIDYWANA PRZEZ HEURYSTYKĘ ?? 
+
+Są generalnie 3 metody przybliżające odległość od bierzącego wierzchołka do docelowego
+
+--> 1 -- Nic innego jak suma odległości na współrzędnych x oraz y  (abs == wwartośc bezwzględna)
+
+ h = abs (current_cell.x – goal.x) + 	 
+	+ abs(current_cell.y - goal.y)
+
+Najczęsciej używana gdy mamy do wyboru tylko 4 kierunki ruchu (dół, góra, prawo, lewo)	
+
+--> 2 -- Wybieramy maximum z odleglości na współrzędnych x lub y
+
+h = max { abs(current_cell.x – goal.x),
+           abs(current_cell.y – goal.y) }
+		   
+Używamy kiedy możemy poruszać się tylko w ośmiu kierunkach
+
+--> 3 -- Jako odległość Euclidesowa (wzór mówi wszystko)
+ h = sqrt ( (current_cell.x – goal.x)^2 + 
+            (current_cell.y – goal.y)^2 ) 
+
+Używamy kiedy możemy poruszać się w każdym możliwym kierunku ( to chyba rozwiąznie dla nas odpowienie)
+
+-------------------------------------------------------------------------------------------------------------------------
+PRZYKŁADOWA IMPLEMENTACJA W PSEUDOKODZIE 
+
+
+ function A*(start,goal)
+     closedset := the empty set                 % Zbiór wierzchołków przejrzanych.
+     openset := set containing the initial node % Zbiór wierzchołków nie odwiedzonych.
+     g_score[start] := 0                        % Długość optymalnej trasy.
+     while openset is not empty
+         x := the node in openset having the lowest f_score[] value
+         if x = goal
+             return reconstruct_path(came_from,goal)
+         remove x from openset
+         add x to closedset
+         foreach y in neighbor_nodes(x)
+             if y in closedset
+                 continue
+             tentative_g_score := g_score[x] + dist_between(x,y)
+             tentative_is_better := false
+             if y not in openset
+                 add y to openset
+                 h_score[y] := heuristic_estimate_of_distance_to_goal_from(y)
+                 tentative_is_better := true
+             elseif tentative_g_score < g_score[y]
+                 tentative_is_better := true
+             if tentative_is_better = true
+                 came_from[y] := x
+                 g_score[y] := tentative_g_score
+                 f_score[y] := g_score[y] + h_score[y] % Przewidywany dystans od startu do celu przez y.
+     return failure
+
+ function reconstruct_path(came_from,current_node)
+     if came_from[current_node] is set
+         p = reconstruct_path(came_from,came_from[current_node])
+         return (p + current_node)
+     else
+         return the empty path
+		 
+-------------------------------------------------------------------------------------------------------------------------
+
+UŻYWANE MATERIAŁY I WIĘCEJ INFORMAJCI ::
+https://en.wikipedia.org/wiki/A*_search_algorithm
+https://www.geeksforgeeks.org/a-search-algorithm/
+https://pl.wikipedia.org/wiki/Algorytm_A*
+https://pl.wikipedia.org/wiki/Heurystyka_(informatyka)
+https://en.wikipedia.org/wiki/Pathfinding
+
+
+
+
+
+
+
+
