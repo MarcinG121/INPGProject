@@ -1,16 +1,23 @@
-1. Algorytm Bellmana-Forda służy do znajdowania najktrótszej drogi z wierzchołka s w grafie skierowanym bez cykli o ujemnej
-długości. 
+1. Wprowadzenie
+
+Algorytm Bellmana-Forda służy do znajdowania najktrótszej drogi z wierzchołka s w grafie skierowanym bez cykli o ujemnej
+długości. Algorytm ten bazuje na na metodzie relaksacji, zmniejszając stopniowo oszacowanie d[v] na wagę najkrótszej ścieżki ze źródła s
+do każdego wierzchołka, aż zostanie osiągnięta rzeczewista waga najkrótszej drogi. Algorytm zwraca TRUE jeśli graf nie zawiera cykli 
+ujemnych wagach osiągalnych ze źródła. 
 
 
+2. Działanie
 
-2. Złożoność obliczeniowa:
-   Złoźoność pamięciowa:
+Po wykonaniu  inicjacji algorytm przetwarza krawędzie grafu w V - 1 przebiegach. Każdy przebieg jest jedną iteracją pętli for i polega na 
+jednarazowej relaksacji każdej krawędzi. Po wykonaniu wszystkich V - 1 przebiegów sprawdza się, czy istnieje cykl o ujemnej wadze, i 
+zwraca właściwą wartość logiczną.
 
 
+3. Złożoność obliczeniowa:  O(V*E)
+   Złoźoność pamięciowa: O(V)
 
 
-
-3. Przykładowy pseudokod:
+4. Przykładowy pseudokod:
 
  function BellmanFord(list vertices, list edges, vertex source)
    ::distance[],predecessor[]
@@ -36,7 +43,7 @@ długości.
    
    return distance[], predecessor[]
    
-   4. Bibliografia i więcej informacji:
+   5. Bibliografia i więcej informacji:
    - Thomas Cormen "Wprowadzie do algorytmów"
    - https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm
    - https://pl.wikipedia.org/wiki/Algorytm_Bellmana-Forda
