@@ -1,3 +1,4 @@
 14.05.2018
 
 Przeczytany skrypt od Kłeczka z Python'a - strony 1-23.
+Dodanie Skryptu z Python'a do dostępnych dokumentów.
