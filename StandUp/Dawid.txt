@@ -7,3 +7,7 @@ Dodanie Skryptu z Python'a do dostępnych dokumentów.
 
 Przeczytany skrypt od Kłeczka z Python'a - strony 24-51.
 Obejrzenie przykładowej implementacji algorytmu A* w Python'ie.
+
+16.05.2018
+
+Przeczytany skrypt od Kłeczka z Python'a - strony 52-55.
