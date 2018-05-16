@@ -10,4 +10,4 @@ Obejrzenie przykładowej implementacji algorytmu A* w Python'ie.
 
 16.05.2018
 
-Przeczytany skrypt od Kłeczka z Python'a - strony 52-55.
+Ukończony skrypt od Kłeczka z Python'a - strony 52-67.
