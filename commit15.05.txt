@@ -1,2 +1,0 @@
-14 maja
-zapozna³em siê z dzia³aniem algorytmu Floyda-Warshalla, stworzy³em stronê na wiki na ten temat
