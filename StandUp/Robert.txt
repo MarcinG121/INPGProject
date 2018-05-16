@@ -6,3 +6,6 @@ Zacząłem czytań skrypt z Python'a
 
 15 maja
 Zapoznałem się z działaniem algorytmy Floyda-Warshalla i strorzyłem stronę na wiki na ten temat
+
+16 maja
+Aktualizowałem backlog produktu
