@@ -1,0 +1,29 @@
+Algorytm Johnsona jest asymptotycznie szybszy, zarÛwno od algorytmu polegajπcego na podnoszeniu do kwadratu, jak i od algorytmu Floyda-Warshalla. Algorytm ten zwraca macierz wag najkrÛtszych úcieøek, albo informuje, øe graf wejúciowy ma cykl o ujemnej wadze. W samym algorytmie urzywane sπ algorytmy Dijkstry oraz algorytm Bellmana-Forda. 
+Algorytm przebiega w natÍpujπcy sposÛb:
+
+
+1. obliczamy G`	
+2 if Bellman-Ford(G`,w,s) = FALSE
+3 then wypisz(graf wejúciowy zawiera cykl o nieujemnej wadze)
+4 else for kaødy wierzcho≥ek v
+5 do przypisz h(v) wartoúÊ sigma(s,v) obliczonπ w algorytmie Bellmana-Forda
+6 for kaøda krawÍdü (u,v)
+7 do w`(u,v) = w(u,v) + h(u)-h(v)
+8 for kaødy wierzcho≥ek u
+9 do wywo≥aj Dijkstra(G, w`,u) albo oliczyÊ sigma`(u,v) dla kaødego v
+10 for kaødy wierzcho≥ek v
+11 do d = sigma`(u,v)+h(v)-h(u)
+12 return d
+
+gdzie:
+G` - stworzony graf
+w - wagi
+v - wierzcho≥ek
+
+Czas algorytmu Johansona wynosi O(V^2lg(V)+VE), zaleøy to m.in. od sposobu implementacji algorytmu Dijkstry
+
+èrÛd≥a;
+
+"Wprowadzenie do algorytmÛw" T. Cormen, Wydawnictwo naukowe PWN
+https://pl.wikipedia.org/wiki/Algorytm_Johnsona
+ 
