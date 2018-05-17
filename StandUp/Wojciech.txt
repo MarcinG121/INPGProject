@@ -1,0 +1,6 @@
+15.05.2018
+-dokona³em znalezienia mapy kampusu
+-pobra³em mapê kampusu
+-przygotowywa³em siê do pisania testów jesnostkowych
+17.05.2018
+-Kontunuacja æwiczenia programowania w pythonie
