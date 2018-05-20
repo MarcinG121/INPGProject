@@ -13,3 +13,7 @@ Obejrzenie przykładowej implementacji algorytmu A* w Python'ie.
 Ukończony skrypt od Kłeczka z Python'a - strony 52-67.
 Dalsze tworzenie backlog'u.
 Dalsze zrozumienie implementacji algorytmu A*.
+
+20.05.2018
+
+Dalsza analiza algorytmu A* i jego realizacji w Python'ie.
