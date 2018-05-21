@@ -17,3 +17,8 @@ Dalsze zrozumienie implementacji algorytmu A*.
 20.05.2018
 
 Dalsza analiza algorytmu A* i jego realizacji w Python'ie.
+
+21.05.2018
+
+Dalsza analiza algorytmu A* i jego realizacji w Python'ie.
+Konfiguracja środowiska pracy (zainstalowanie biblioteki - pygame).
