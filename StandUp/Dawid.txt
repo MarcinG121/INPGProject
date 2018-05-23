@@ -27,3 +27,7 @@ Konfiguracja środowiska pracy (zainstalowanie biblioteki - pygame).
 
 Dodanie kodu A*.
 Praca nad wizualizerem szukania najkrótszej ścieżki.
+
+23.05.2018
+
+Modyfikacja kodu A*.
