@@ -1,0 +1,16 @@
+18.05.2018r.
+1. Aktualizacja Backloga
+2. Æwiczenie programowania
+3. Aktualizacja backloga
+21.05.2018r.
+1. Æwiczenie programowania python
+2. Programowanie w zespole z Dawidem wiltualizer algorytmu
+3. Brak nowych commit
+22.05.2018r.
+1. Programowanie wiltualizera
+2. Programowanie wiltualizera
+3. Brak commit
+23.05.2018r. 
+1. Programowanie wiltualizera 
+2. Programowanie wiltualizera , implementacja algorytmu najktórszej drogi
+3. Brak commit
