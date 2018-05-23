@@ -4,13 +4,13 @@
 3. Aktualizacja backloga
 21.05.2018r.
 1. Æwiczenie programowania python
-2. Programowanie w zespole z Dawidem wiltualizer algorytmu
+2. Programowanie w zespole z Dawidem wizualizatora algorytmu najkrótszej drogi
 3. Brak nowych commit
 22.05.2018r.
-1. Programowanie wiltualizera
-2. Programowanie wiltualizera
+1. Programowanie wizualizatora
+2. Programowanie wizualizatora
 3. Brak commit
 23.05.2018r. 
-1. Programowanie wiltualizera 
-2. Programowanie wiltualizera , implementacja algorytmu najktórszej drogi
+1. Programowanie wizualizatora 
+2. Programowanie wizualizatora , implementacja algorytmu najktórszej drogi
 3. Brak commit
