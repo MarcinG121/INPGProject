@@ -22,3 +22,8 @@ Dalsza analiza algorytmu A* i jego realizacji w Python'ie.
 
 Dalsza analiza algorytmu A* i jego realizacji w Python'ie.
 Konfiguracja środowiska pracy (zainstalowanie biblioteki - pygame).
+
+22.05.2018
+
+Dodanie kodu A*.
+Praca nad wizualizerem szukania najkrótszej ścieżki.
