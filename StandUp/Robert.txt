@@ -10,5 +10,8 @@ Zapoznałem się z działaniem algorytmy Floyda-Warshalla i strorzyłem stronę 
 16 maja
 Aktualizowałem backlog produktu
 
+22 maja
+Czytałem skrypt z Pzthona
+
 23 maja
 Ćwiczyłem programowanie w Python
