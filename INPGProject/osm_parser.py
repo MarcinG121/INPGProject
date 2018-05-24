@@ -4,13 +4,11 @@ WIP
 Uzycie:
 python osm_parser sciezka_pliku_osm
 """
-# TODO: precyzja floatow, paczka decimal (?)
+
 import networkx as nx
 import xml.etree.ElementTree as et
-import sys
 import math
-import functools
-import matplotlib.pyplot as plt
+
 
 class Node:
     def __init__(self, id, longitude, latitude):
@@ -40,6 +38,7 @@ class Way:
 
 def length(n1, n2):
     return math.sqrt(pow(n1.latitude - n2.latitude, 2) + pow(n1.longitude - n2.longitude, 2))
+
 
 def parse_osm(osm_path):
     g = nx.Graph()
@@ -74,19 +73,24 @@ def parse_osm(osm_path):
                 g.add_edge(junctions[i-1].id, junctions[i].id, weight=length(junctions[i-1], junctions[i]))
     return nodes, g
 
-if __name__ == "__main__":
-    try:
-        path = sys.argv[1]
-    except IndexError:
-        path = "data\msagh.osm"
-    nodes, g = parse_osm(path)
+
+def get_route(g, nodes, node1_id="240977613", node2_id="2468665585"):
+    d_path = nx.dijkstra_path(g, node1_id, node2_id)
+    coordinates = ""
+    for n in d_path:
+        coordinates += "[{},{}],".format(nodes[n].latitude, nodes[n].longitude)
+    coordinates = coordinates[:-1]
+    return coordinates
+
+# if __name__ == "__main__":
+#     try:
+#         path = sys.argv[1]
+#     except IndexError:
+#         path = "data\msagh.osm"
+#     nodes, g = parse_osm(path)
     # with open("data\output.txt", "w", encoding="utf-8") as f:
     #     for way in ways:
     #         f.write(str(way))
     #     for node in nodes:
     #         f.write(str(node))
     # d_path = nx.dijkstra_path(g, "1450438909", "1055518868")
-    d_path = nx.dijkstra_path(g, "240977613", "2468665585")
-    for n in d_path:
-        s = "[{},{}],".format(nodes[n].latitude, nodes[n].longitude)
-        print(s)
