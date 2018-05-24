@@ -31,3 +31,8 @@ Praca nad wizualizerem szukania najkrótszej ścieżki.
 23.05.2018
 
 Modyfikacja kodu A*.
+
+24.05.2018
+
+Ukończenie kodu A*.
+Testowanie wizualizera.
