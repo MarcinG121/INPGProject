@@ -14,5 +14,9 @@ Dalszy ciąg pracy nad konwertowaniem map
 Nauka pisania testów jednostkowych w pythonie
 23.05
 Debugowanie konwertowania map
+24.05
+Graficzne przedstawienie mapy
 28.05
 Klikanie po mapie
+
+
