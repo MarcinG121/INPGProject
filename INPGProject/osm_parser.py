@@ -69,10 +69,10 @@ def parse_osm(osm_path: str):
     return g
 
 # TODO: funkcja znajdująca wierzchołek blisko podanych koordynatów
-def find_closest(latitude_length: str) -> str:
+def find_closest(latitude: str, length: str) -> str:
     """
     zwraca id wierzchołka bliskiego podanym koordynatom
-    latitude_length w formacie str oddzielone przecinkiem np. "50.21,20.38"
+    latitude, length w formacie str np. "50.21, 20.38"
     """
     pass
 
