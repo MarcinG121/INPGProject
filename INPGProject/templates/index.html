@@ -30,14 +30,21 @@
 		else {
 		    latlng_2 = e.latlng;
 			var xhttp = new XMLHttpRequest();
-			xhttp.open("GET", "route?latlng_1=" + latlng_1.lat + "," + latlng_1.lng
-                + "latlng_2=" + latlng_2.lat + "," + latlng_2.lng, true);
+			xhttp.open("GET", "routecoords?lat_1=" + latlng_1.lat + "&len_1=" + latlng_1.lng
+                + "&lat_2=" + latlng_2.lat + "&len_2=" + latlng_2.lng, true);
 			xhttp.send();
 		}
     }
 	mymap.fitBounds(polyline.getBounds());
 	mymap.on('click', onMapClick);
-
+	document.getElementById("mapid").style.cursor = "pointer"
 </script>
+<form action="/routecoords">
+  Latitude_1: <input type="text" name="lat_1"><br>
+  Length_1: <input type="text" name="len_1"><br>
+    Latitude_2: <input type="text" name="lat_2"><br>
+  Length_2: <input type="text" name="len_2"><br>
+  <input type="submit" value="Submit">
+</form>
 </body>
 </html>
