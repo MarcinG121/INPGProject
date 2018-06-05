@@ -45,4 +45,6 @@ Modyfikacja kodu A*.
 Ukończenie kodu A*.
 Ukończenie wizualizera.
 
+25.05.2018
 
+Testowanie wizualizera.
