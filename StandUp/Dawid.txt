@@ -14,6 +14,14 @@ Ukończony skrypt od Kłeczka z Python'a - strony 52-67.
 Dalsze tworzenie backlog'u.
 Dalsze zrozumienie implementacji algorytmu A*.
 
+17.05.2018
+
+Ukończenie backlog'u.
+
+18.05.2018
+
+Ćwiczenie programowanie w Python'ie.
+
 20.05.2018
 
 Dalsza analiza algorytmu A* i jego realizacji w Python'ie.
@@ -35,4 +43,6 @@ Modyfikacja kodu A*.
 24.05.2018
 
 Ukończenie kodu A*.
-Testowanie wizualizera.
+Ukończenie wizualizera.
+
+
