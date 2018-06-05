@@ -15,3 +15,6 @@ Czytałem skrypt z Pzthona
 
 23 maja
 Ćwiczyłem programowanie w Python
+
+5 czerwca
+Praca nad backlogiem, zapoznanie się z plikami map
