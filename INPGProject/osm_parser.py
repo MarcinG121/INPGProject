@@ -71,7 +71,7 @@ def parse_osm(osm_path: str):
 
 
 # TODO: funkcja znajdująca wierzchołek blisko podanych koordynatów
-def find_closest(latitude: str, length: str) -> str:
+def find_closest(g: nx.Graph, latitude: str, length: str) -> str:
     """
     zwraca id wierzchołka bliskiego podanym koordynatom
     latitude, length w formacie str np. "50.21, 20.38"
