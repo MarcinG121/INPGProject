@@ -8,6 +8,7 @@ python osm_parser sciezka_pliku_osm
 import networkx as nx
 import xml.etree.ElementTree as et
 import math
+import matplotlib.pyplot as plt
 
 
 class Node:
@@ -59,7 +60,7 @@ def parse_osm(osm_path: str):
         ways.append(w)
     for way in ways:
         junctions = []
-        n1 = way.nodes[0]
+        n1 = way.nodes[0] #First node in way
         g.add_node(nodes[n1].id, node=nodes[n1])
         junctions = [nodes[n] for n in way.nodes if nodes[n].used > 1]
         for (i, j) in enumerate(junctions):
@@ -68,13 +69,26 @@ def parse_osm(osm_path: str):
                 g.add_edge(junctions[i - 1].id, junctions[i].id, weight=length(junctions[i - 1], junctions[i]))
     return g
 
+
 # TODO: funkcja znajdująca wierzchołek blisko podanych koordynatów
 def find_closest(latitude: str, length: str) -> str:
     """
     zwraca id wierzchołka bliskiego podanym koordynatom
     latitude, length w formacie str np. "50.21, 20.38"
     """
-    pass
+    graph = parse_osm("data\msagh.osm")
+    # nx.draw(graph, with_labels=True)
+    # plt.draw()
+    # plt.show()
+    min = 100
+    closest_node_id = ""
+    for id, node_dict in graph.nodes.items():
+        var_temp = abs(node_dict['node'].longitude - float(length)) + abs(node_dict['node'].latitude - float(latitude))
+        if var_temp < min:
+            min = var_temp
+            closest_node_id = id
+
+    return closest_node_id
 
 
 def get_route(g, node1_id="240977613", node2_id="2468665585"):
@@ -97,3 +111,5 @@ def get_route(g, node1_id="240977613", node2_id="2468665585"):
 #     for node in nodes:
 #         f.write(str(node))
 # d_path = nx.dijkstra_path(g, "1450438909", "1055518868")
+
+print(find_closest('50.21', '20.38'))
