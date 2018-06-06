@@ -23,9 +23,9 @@ def find_route():
 def find_route_by_coordinates():
     args = request.args.to_dict()
     try:
-        node1_id = osm_parser.find_closest(args["lat_1"], args["len_1"])
-        node2_id = osm_parser.find_closest(args["lat_2"], args["len_2"])
-        # coordinates = osm_parser.get_route(g, node1_id, node2_id)
+        node1_id = osm_parser.find_closest(g, args["lat_1"], args["len_1"])
+        node2_id = osm_parser.find_closest(g, args["lat_2"], args["len_2"])
+        coordinates = osm_parser.get_route(g, node1_id, node2_id)
     except KeyError:
         print("cos poszlo nie tak")
         coordinates = osm_parser.get_route(g)

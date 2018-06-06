@@ -29,10 +29,8 @@
 			click_counter += 1;}
 		else {
 		    latlng_2 = e.latlng;
-			var xhttp = new XMLHttpRequest();
-			xhttp.open("GET", "routecoords?lat_1=" + latlng_1.lat + "&len_1=" + latlng_1.lng
+			window.location.replace("http://127.0.0.1:5000/" + "routecoords?lat_1=" + latlng_1.lat + "&len_1=" + latlng_1.lng
                 + "&lat_2=" + latlng_2.lat + "&len_2=" + latlng_2.lng, true);
-			xhttp.send();
 		}
     }
 	mymap.fitBounds(polyline.getBounds());
