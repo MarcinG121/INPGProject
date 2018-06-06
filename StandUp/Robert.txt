@@ -18,3 +18,6 @@ Czytałem skrypt z Pzthona
 
 5 czerwca
 Praca nad backlogiem, zapoznanie się z plikami map
+
+6 czerwca
+Skończyłem backlog w 4 sprincie
