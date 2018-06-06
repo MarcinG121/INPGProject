@@ -77,7 +77,7 @@ def find_closest(latitude: str, length: str) -> str:
     latitude, length w formacie str np. "50.21, 20.38"
     """
     graph = parse_osm("data\msagh.osm")
-    # nx.draw(graph, with_labels=True)
+    # nx.draw(graph, with_labels=True) DO rysowania grafu
     # plt.draw()
     # plt.show()
     min = 100
@@ -112,4 +112,4 @@ def get_route(g, node1_id="240977613", node2_id="2468665585"):
 #         f.write(str(node))
 # d_path = nx.dijkstra_path(g, "1450438909", "1055518868")
 
-print(find_closest('50.21', '20.38'))
+# print(find_closest('50.21', '20.38'))  test jakiś
