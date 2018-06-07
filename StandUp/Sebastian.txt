@@ -18,5 +18,12 @@ Debugowanie konwertowania map
 Graficzne przedstawienie mapy
 28.05
 Klikanie po mapie
+29.05
+Klikanie po mapie
+30.05
+Debugowanie algorytmu parsującego mapy
+4.05
+Podstawy js - zeby dynamicznie zmienic sttronw
 
-
+6.05
+Pokazywanie trasy po oznaczeniu dwóch punktów
