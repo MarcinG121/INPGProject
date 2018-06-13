@@ -52,3 +52,15 @@ Testowanie wizualizera.
 28.05.2018 - 08.06.2018
 
 Praca jako Scrum Master.
+
+11.05.2018
+
+Aktualizacja Backlog'u.
+
+12.05.2018
+
+Testowanie wizualizera i myślenie nad optymalizacją algorytmu.
+
+13.05.2018
+
+Aktualizacja Backlog'u.
