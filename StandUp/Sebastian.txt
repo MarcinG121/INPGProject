@@ -24,6 +24,13 @@ Klikanie po mapie
 Debugowanie algorytmu parsującego mapy
 4.05
 Podstawy js - zeby dynamicznie zmienic sttronw
-
 6.05
 Pokazywanie trasy po oznaczeniu dwóch punktów
+8.05
+Testowanie aplikacji
+9.05
+Testowanie aplikacji
+11.05
+Testowanie aplikacji
+12.05
+Testowanie aplikacji
