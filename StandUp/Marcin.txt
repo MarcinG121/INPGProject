@@ -24,3 +24,20 @@
 1. Programowanie funkcji odległości punktów wybranych przez użytkownika od najbliższej drogi.
 2. Testowanie mapy
 3. Brak commit
+
+15.06.18r.
+1. Aktualizacja backloga.
+2. Naprawa błędu, w którym aplikacja czasem się nie uruchamia 0/6
+3. Brak commit
+16.06.18r.
+1. Naprawa błędu, w którym aplikacja czasem się nie uruchamia 0/6
+2. Naprawa błędu, w którym aplikacja czasem się nie uruchamia 2/6
+3. Brak commit
+17.06.18r.
+1. Naprawa błędu, w którym aplikacja czasem się nie uruchamia 2/6
+2. Naprawa błędu, w którym aplikacja czasem się nie uruchamia 4/6
+3. Brak commit
+18.06.18r.
+1. Naprawa błędu, w którym aplikacja czasem się nie uruchamia 4/6
+2. Naprawa błędu, w którym aplikacja czasem się nie uruchamia 6/6
+3. Commit 'osm_parser.py'
