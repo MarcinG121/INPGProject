@@ -21,3 +21,17 @@ Praca nad backlogiem, zapoznanie się z plikami map
 
 6 czerwca
 Skończyłem backlog w 4 sprincie
+
+10 czerwca
+Praca nad algorytmem a*
+
+12 czerwca 
+Praca nad algorytmem a*
+
+15 czerwca
+Zwiększenie obszaru mapy, na której działa wyszukiwanie trasy
+
+17 czerwca 
+Pisanie sprawozdania na temat wykonanej pracy
+
+
