@@ -24,12 +24,14 @@ Skończyłem backlog w 4 sprincie
 
 10 czerwca
 Praca nad algorytmem a*
+Zwiększenie obszaru mapy, na której działa wyszukiwanie trasy 1/4
 
 12 czerwca 
 Praca nad algorytmem a*
+Zwiększenie obszaru mapy, na której działa wyszukiwanie trasy 3/4
 
 15 czerwca
-Zwiększenie obszaru mapy, na której działa wyszukiwanie trasy
+Zwiększenie obszaru mapy, na której działa wyszukiwanie trasy 4/4
 
 17 czerwca 
 Pisanie sprawozdania na temat wykonanej pracy
