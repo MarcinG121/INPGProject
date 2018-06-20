@@ -1,86 +1,66 @@
 14.05.2018
-
 Przeczytany skrypt od Kłeczka z Python'a - strony 1-23.
 Dodanie Skryptu z Python'a do dostępnych dokumentów.
 
 15.05.2018
-
 Przeczytany skrypt od Kłeczka z Python'a - strony 24-51.
 Obejrzenie przykładowej implementacji algorytmu A* w Python'ie.
 
 16.05.2018
-
 Ukończony skrypt od Kłeczka z Python'a - strony 52-67.
 Dalsze tworzenie backlog'u.
 Dalsze zrozumienie implementacji algorytmu A*.
 
 17.05.2018
-
 Ukończenie backlog'u.
 
 18.05.2018
-
 Ćwiczenie programowanie w Python'ie.
 
 20.05.2018
-
 Dalsza analiza algorytmu A* i jego realizacji w Python'ie.
 
 21.05.2018
-
 Dalsza analiza algorytmu A* i jego realizacji w Python'ie.
 Konfiguracja środowiska pracy (zainstalowanie biblioteki - pygame).
 
 22.05.2018
-
 Dodanie kodu A*.
 Praca nad wizualizerem szukania najkrótszej ścieżki.
 
 23.05.2018
-
 Modyfikacja kodu A*.
 
 24.05.2018
-
 Ukończenie kodu A*.
 Ukończenie wizualizera.
 
 25.05.2018
-
 Testowanie wizualizera.
 
 28.05.2018 - 08.06.2018
-
 Praca jako Scrum Master.
 
 11.05.2018
-
 Aktualizacja Backlog'u.
 
 12.05.2018
-
 Testowanie wizualizera i myślenie nad optymalizacją algorytmu.
 
 13.05.2018
-
 Aktualizacja Backlog'u.
 
 14.05
-
 Testowanie i naprawianie dotychczasowego kodu.
 
 15.05
-
 Testowanie i naprawianie dotychczasowego kodu.
 
 18.05
-
 Zwiększenie obszaru mapy.
 
 19.05
-
 Zapoznanie się z metodami konwerowania map.
 
 20.05
-
 Pielęgnacja kodu oraz sporządzanie dokumentacji z prac.
