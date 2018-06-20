@@ -64,3 +64,23 @@ Testowanie wizualizera i myślenie nad optymalizacją algorytmu.
 13.05.2018
 
 Aktualizacja Backlog'u.
+
+14.05
+
+Testowanie i naprawianie dotychczasowego kodu.
+
+15.05
+
+Testowanie i naprawianie dotychczasowego kodu.
+
+18.05
+
+Zwiększenie obszaru mapy.
+
+19.05
+
+Zapoznanie się z metodami konwerowania map.
+
+20.05
+
+Pielęgnacja kodu oraz sporządzanie dokumentacji z prac.
